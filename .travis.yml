@@ -1,93 +1,59 @@
-<<<<<<< HEAD
----
-=======
 --- 
->>>>>>> f8a44f0139c673bf5783cf68c012c32905e09458
 before_install: 
   - "sudo apt-get update"
   - "sudo apt-get install shellcheck"
   - "sudo apt-get install imagemagick"
-<<<<<<< HEAD
   - "sudo apt install p7zip-full"
   - "sudo apt install ghostscript"
   - "ls -l"
-=======
   - "sudo apt-get install ghostscript"
   - "sudo apt install p7zip-full"
->>>>>>> f8a44f0139c673bf5783cf68c012c32905e09458
 language: bash
 notifications: 
   email: 
     on_success: never
 scirpt: 
-<<<<<<< HEAD
   - "wget \"https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv\""
   - "wget \"https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z\""
   - "7z x -oweb_log.tsv web_log.tsv.7z"
-=======
-  - "wget \"https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z\""
-  - "7z x -oweb_log.tsv web_log.tsv.7z"
-  - "wget \"https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv\""
->>>>>>> f8a44f0139c673bf5783cf68c012c32905e09458
   - "ls -l"
   - "cd chap0x04/"
   - "ls -l"
   - "echo \"Task one\""
-<<<<<<< HEAD
   - "shellcheck bash/scripts.sh"
   - "echo \":===================================\""
   - "cd test_pics/"
   - "bash ../bash/scripts.sh -h"
+  - "ls -l"
   - "bash ../bash/scripts.sh -q 88%"
+  - "ls -l"
   - "bash ../bash/scripts.sh -r 70%"
+  - "ls -l"
   - "bash ../bash/scripts.sh -w JiJi"
-  - "bash ../bash/scripts.sh -p \"JiJi's pics\""
-  - "bash ../bash/scripts.sh -t"
-  - "echo \":===================================\""
-  - "cd ../bash"
   - "ls -l"
-  - "echo \"Task two\""
-  - "shellcheck scripts2.sh"
-  - "wget \"https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv\""
-=======
-  - "cd test_pics"
-  - "shellcheck ../bash/scripts.sh"
-  - "echo \":===================================\""
-  - "bash ../bash/scripts.sh -h"
-  - "bash ../bash/scripts.sh -q 88%"
-  - "bash ../bash/scripts.sh -r 70%"
-  - "bash ../bash/scripts.sh -w jiji"
   - "bash ../bash/scripts.sh -p \"JiJi's pics\""
+  - "ls -l"
   - "bash ../bash/scripts.sh -t"
-  - "cd ../bash"
   - "ls -l"
   - "echo \":===================================\""
+  - "cd ../../
+  - "ls -l"
   - "echo \"Task two\""
-  - "shellcheck scripts2.sh"
->>>>>>> f8a44f0139c673bf5783cf68c012c32905e09458
-  - "echo \":===================================\""
-  - "bash scripts2.sh -h"
-  - "bash scripts2.sh -r"
-  - "bash scripts2.sh -p"
-  - "bash scripts2.sh -n"
-  - "bash scripts2.sh -a"
+  - "shellcheck chap0x04/bash/scripts2.sh"
+  - "bash chap0x04/bash/scripts2.sh -h"
+  - "bash chap0x04/bash/scripts2.sh -r"
+  - "bash chap0x04/bash/scripts2.sh -p"
+  - "bash chap0x04/bash/scripts2.sh -n"
+  - "bash chap0x04/bash/scripts2.sh -a"
   - "echo \":===================================:\""
   - "echo \"Task three\""
-  - "shellcheck scripts3.sh"
-<<<<<<< HEAD
-  - "wget \"https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z\""
-  - "7z x -oweb_log.tsv web_log.tsv.7z"
-=======
->>>>>>> f8a44f0139c673bf5783cf68c012c32905e09458
+  - cd web_log.tsv
+  - "shellcheck ../chap0x04/bash/scripts3.sh"
   - "echo \":===================================:\""
-  - "bash scripts3.sh -h"
-  - "bash scripts3.sh -t"
-  - "bash scripts3.sh -i"
-  - "bash scripts3.sh -u"
-  - "bash scripts3.sh -r"
-  - "bash scripts3.sh -x"
-  - "bash scripts3.sh -s /icons/menu.xbm"
-<<<<<<< HEAD
-
-=======
->>>>>>> f8a44f0139c673bf5783cf68c012c32905e09458
+  - "bash ../chap0x04/bash/scripts3.sh -h"
+  - "bash ../chap0x04/bash/scripts3.sh -t"
+  - "bash ../chap0x04/bash/scripts3.sh -i"
+  - "bash ../chap0x04/bash/scripts3.sh -u"
+  - "bash ../chap0x04/bash/scripts3.sh -r"
+  - "bash ../chap0x04/bash/scripts3.sh -x"
+  - "bash ../chap0x04/bash/scripts3.sh -s /icons/menu.xbm"
